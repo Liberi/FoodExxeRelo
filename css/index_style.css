@@ -1,0 +1,298 @@
+@font-face {
+  /*пождключение шрифтов 1*/
+  font-family: "CirceLight"; /*их название*/
+  src: url("../fonts/Circe/CirceLight/CirceLight.eot");
+  src: url("../fonts/Circe/CirceLight/CirceLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Circe/CirceLight/CirceLight.woff") format("woff"),
+    url("../fonts/Circe/CirceLight/CirceLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  /*пождключение шрифтов 2*/
+  font-family: "CirceRegular"; /*их название*/
+  src: url("../fonts/Circe/CirceRegular/CirceRegular.eot");
+  src: url("../fonts/Circe/CirceRegular/CirceRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Circe/CirceRegular/CirceRegular.woff") format("woff"),
+    url("../fonts/Circe/CirceRegular/CirceRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+*/* Удаляем изначальные отступы у всех элементов */ {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover /*ссылка при наведении прозрачнее и подчеркнутая*/ {
+  text-decoration: underline;
+  filter: brightness(85%);
+}
+button:hover {
+  filter: brightness(85%);
+} /*делает кнопку прозрачнее при наведении*/
+ul {
+  list-style: none;
+} /* Удаляем точки у всех списков */
+.flex /* Класс который облегчает написание display: flex */ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header.flex {
+  font-family: CirceRegular;
+  color: white; 
+  justify-content: space-between;
+  height: 1000px;
+}
+aside {
+  box-sizing: border-box;
+  padding: 20px 0;
+  background-color: rgba(51, 51, 51, 1);
+  height: 1000px;
+  width: 120px;
+}
+aside ul.flex {
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%; /* inherit в этом и других свойствах это параметр, 
+                        который копирует свойства у своего родительского элемента */
+  width: 100%;
+}
+aside ul.flex li {
+  margin: 10px 0;
+}
+aside ul.flex li:nth-child(2) {
+  flex-grow: 1;
+}
+main {
+  margin-bottom: 100px;
+  font-family: CirceRegular;
+  color: rgba(51, 51, 51, 1);
+}
+.padding-main {
+  padding: 0 13%;
+}
+.main-hed {
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(rgba(51, 51, 51, 0.4), rgba(51, 51, 51, 0.4)),
+    url("../img/fons/fons_main.jpeg") center center no-repeat;
+  /* в данном случае параметр linear-gradient необходим для задания определенного затенения в самом фоне с картинкой*/
+  background-size: 115%; /* размер заполнения фона */
+  height: inherit;
+  width: 100%;
+}
+.main-hed nav {
+  margin: 30px 50px 0 0;
+  align-self: flex-end;
+}
+.main-hed ul {
+  height: 42px;
+}
+.main-hed li {
+  margin-right: 40px;
+}
+.main-hed button {
+  height: 100%;
+  padding: 10px 20px;
+  background: rgba(181, 149, 113, 1);
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 550;
+}
+.main-hed h1 {
+  align-self: start;
+  font-size: 54px;
+  margin: 0 0 150px 302px;
+}
+.title-block {
+  width: 25%;
+  margin-top: 150px;
+}
+.title-block hr {
+  width: 60px;
+  border: 2px solid rgba(181, 149, 113, 1);
+  margin-left: 30px;
+}
+.title-block p {
+  text-transform: uppercase; /* все символы большие */
+  font-size: 20px;
+  font-family: CirceRegular;
+  font-weight: 600;
+}
+main section.flex {
+  align-items: start;
+  padding: 80px 0 0 4%;
+}
+main section h2 {
+  font-size: 64px;
+  line-height: 1.2;
+}
+main section > p,
+.menu p {
+  width: 40%;
+  padding-left: 14%;
+  color: black;
+  font-size: 18px;
+  line-height: 25.2px; /* Межстрочный интервал */
+}
+.menu {
+  flex-direction: column;
+}
+/* если ты не разбираешься в селекторах мой дорогой дргуг, смотри их в инете,
+ даже конкеретно могу сказать где "https://htmlacademy.ru/blog/css/selectors" */
+.menu > div:first-of-type {
+  align-items: start;
+}
+.menu > div:last-of-type {
+  margin-top: 120px;
+  width: 100%;
+}
+.menu-img {
+  position: relative;
+  width: 26%;
+  height: 270px;
+  flex-direction: column;
+  margin: 0 4%;
+}
+.menu-img .title-block {
+  padding-top: 25px;
+  width: 100%;
+  margin: 0;
+}
+.menu-img .title-block p {
+  padding: 0;
+  width: auto;
+}
+.menu-img img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover; /* Размер картинки относительно блока похоже на свойство background-а*/
+}
+.null-block {
+  /* типо блок пустой т.к у него колько рамка */
+  position: absolute;
+  z-index: -1; /* Рамка будет ниже картинки */
+  top: -20%;
+  width: 120%;
+  height: 85%;
+  border: 1px solid rgba(51, 51, 51, 0.2);
+}
+.delivery p {
+  padding-left: 5%;
+}
+.delivery button {
+  font-family: CirceRegular;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 60px 30px 0 0;
+}
+.delivery button:first-of-type, 
+.address button:first-of-type{
+  background: rgba(181, 149, 113, 1);
+  color: white;
+  border: none;
+  font-weight: 550;
+}
+.delivery button:last-of-type,
+.address button:last-of-type {
+  background: white;
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  color: rgba(51, 51, 51, 1);
+}
+.contacts {
+  height: 450px;
+  justify-content: space-between;
+}
+.time{
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 85%;
+  width: 35%;
+  padding: 4% 0 0 1%;
+}
+.time li{
+  height: 132px;
+  width: 50%;
+}
+.time h2{
+  display: inline-block;
+  color: rgba(181, 149, 113, 1);
+}
+.time h2::after
+{
+  content: "мин";
+  margin-left: 15px;
+  font-size: 32px;
+} 
+.time p{
+  font-family: CirceRegular;
+  color: black;
+  font-size: 18px;
+}
+.address {
+  position: relative;
+  background: url(../img/fons/map.png) center no-repeat;
+  background-size: cover;
+  width: 56%;
+  height: 100%;
+}
+.address ul{
+  position: absolute;
+  top: 12%;
+  left: -15%;
+  padding: 40px;
+  background-color: rgba(91, 91, 91, 1);
+  width: 45%;
+  height: 60%;
+  color: white;
+}
+.address ul p{
+  display: inline-block;
+  font-size: 18px;
+}
+.address ul img+p{
+  margin: 0 0 20px 15px;
+  font-size: 16px;
+}
+.address ul li:nth-child(3) p
+{
+  margin: 5px 0 15px 0;
+  font-size: 20px;
+}
+.address ul li:last-of-type p{
+  margin: 15px 0 30px 0;
+}
+.address ul b{
+  margin-right: 14px;
+}
+.address button{
+  width: 44%;
+  font-family: CirceRegular;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white !important;
+}
+.address button:last-of-type{
+  margin-left: 15px;
+  background: none;
+  border-color: white;
+}
+footer.flex{
+  padding: 0 13% 0 16%;
+  font-family: CirceLight;
+  height: 120px;
+  background-color: rgba(51, 51, 51, 1);
+  justify-content: space-between;
+}
+footer div img{
+  margin: 0 15px;
+}

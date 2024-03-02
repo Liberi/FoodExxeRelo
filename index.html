@@ -1,78 +1,219 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Food ER - Главная страница</title>
-	<link rel="stylesheet" type="text/css" href="./css/style.css"><!-- Подключаем стили -->
-	<link rel="icon" href="./img/icon/Main_logo.svg"><!-- Подключаем иконку во вкладке браузера -->
-</head>
-<body>
-	<header class="flex">
-		<aside class="left-bar"><!-- тег для бокового меню тот-же div, но более правильно -->
-			<ul class="flex"><!-- боковые иконки в ссылках -->
-				<li><a href=""><img src="./img/icon/Main_logo.svg" alt="⎙"></a></li><!-- ⎙ знак выводится если не найдено изо -->
-				<li><a href=""><img src="./img/icon/menu-left.svg" alt="⎙"></a></li>
-				<li><a href=""><img src="./img/icon/yt.svg" alt="⎙"></a></li>
-				<li><a href=""><img src="./img/icon/vk.svg" alt="⎙"></a></li>
-				<li><a href=""><img src="./img/icon/tg.svg" alt="⎙"></a></li>
-			</ul>
-		</aside>
-		<section class="main-hed flex"><!-- вторая часть шапки страницы с картикой -->
-			<nav><!-- блок для ссылок -->
-				<ul class="flex">
-					<li><a href="">Меню</a></li>
-					<li><a href="">Доставка</a></li>
-					<li><a href="">Оплата</a></li>
-					<li><button>Бронь столика</button></li>
-				</ul>
-			</nav>
-			<h1>Видовой ресторан Food Exxe Relo<br> на Крестовском острове</h1><!-- Основной заголовок с переносом -->
-		</section>
-	</header>
-	<main class="padding-main">
-			<!-- начинаются основные блоки в главной части страницы -->
-			<div class="title-block flex"><p>о ресторане</p><hr></div><!-- создал один класс title-block со своими элементами для удобного дальнейшего задания, т.е в последующем просто копирую и меняю только текст-->
-			<section class="about flex"><!-- блок О ресторане -->
-				<h2>Food <br> Exxe <br> Relo</h2>
-				<p>Sed vel ornare ut rhoncus, ac ut nibh. Amet at sit et nibh. In lectus phasellus non ornare eget velit. Facilisi urna, tristique dui, rhoncus, dolor. Tincidunt enim gravida dignissim leo pulvinar sit volutpat nulla vestibulum. <br> <br>
-					Morbi pellentesque enim massa laoreet vel id. Lectus ac, facilisis neque turpis. Morbi massa enim nullam sem vehicula. Amet quis pellentesque enim porttitor lectus interdum. Nisi, faucibus pharetra at porttitor. Fringilla luctus pretium in viverra. In adipiscing tempor amet malesuada ullamcorper ut sagittis. Dui, scelerisque vulputate risus massa dictum. Cras at quis in eu, faucibus feugiat vel. At.</p>
-			</section>
-				
-			<div class="title-block flex"><p>меню</p><hr></div>
-			<section class="menu flex"><!-- Блок Меню -->
-				<div class="flex">
-					<h2>Меню</h2>
-					<p>At faucibus nullam mauris vitae ut non. Augue libero non nibh nec, et eget erat. Nascetur nunc neque, varius massa aliquam interdum turpis massa. Ac tortor aliquam risus, interdum nisl mauris sit. Ut placerat fermentum pellentesque ac at. Vitae venenatis faucibus urna mi eget vitae quam eu. Euismod sed mauris id turpis iaculis. Erat rutrum dolor, vitae morbi. <br><br>
-					Nunc cras cras aliquet blandit faucibus massa sagittis semper. </p>
-				</div>
-				<div class="flex"><!-- подблоки с белым квадратом-обводкой -->
-					<div class="menu-img flex">
-						<img src="./img/fons/menu-img1.jpg" alt="⎙">
-						<div class="null-block"></div><!-- типо блок пустой т.к у него колько рамка -->
-						<div class="title-block flex"><p>Основное меню</p><hr></div>
-					</div>
-					<div class="menu-img flex">
-						<img src="./img/fons/menu-img2.jpg" alt="⎙">
-						<div class="null-block"></div><!-- типо блок пустой т.к у него колько рамка -->
-						<div class="title-block flex"><p>Барная карта</p><hr></div>
-					</div>
-				</div>
-			</section>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Food ER - Главная страница</title>
+    <link rel="stylesheet" type="text/css" href="./css/index_style.css" />
+    <!-- Подключаем стили -->
+    <link rel="icon" href="./img/icon/Main_logo.svg" />
+    <!-- Подключаем иконку во вкладке браузера -->
+  </head>
+  <body>
+    <header class="flex">
+      <aside class="left-bar">
+        <!-- тег для бокового меню тот-же div, но более правильно -->
+        <ul class="flex">
+          <!-- боковые иконки в ссылках -->
+          <li>
+            <a href=""><img src="./img/icon/Main_logo.svg" alt="⎙" /></a>
+          </li>
+          <!-- ⎙ знак выводится если не найдено изо -->
+          <li>
+            <a href=""><img src="./img/icon/menu-left.svg" alt="⎙" /></a>
+          </li>
+          <li>
+            <a href=""><img src="./img/icon/yt.svg" alt="⎙" /></a>
+          </li>
+          <li>
+            <a href=""><img src="./img/icon/vk.svg" alt="⎙" /></a>
+          </li>
+          <li>
+            <a href=""><img src="./img/icon/tg.svg" alt="⎙" /></a>
+          </li>
+        </ul>
+      </aside>
+      <section class="main-hed flex">
+        <!-- вторая часть шапки страницы с картикой -->
+        <nav>
+          <!-- блок для ссылок -->
+          <ul class="flex">
+            <li><a href="">Меню</a></li>
+            <li><a href="">Доставка</a></li>
+            <li><a href="">Оплата</a></li>
+            <li><button>Бронь столика</button></li>
+          </ul>
+        </nav>
+        <h1>
+          Видовой ресторан Food Exxe Relo<br />
+          на Крестовском острове
+        </h1>
+        <!-- Основной заголовок с переносом -->
+      </section>
+    </header>
+    <main class="padding-main">
+      <!-- начинаются основные блоки в главной части страницы -->
+      <div class="title-block flex">
+        <p>о ресторане</p>
+        <hr />
+      </div>
+      <!-- создал один класс title-block со своими элементами для удобного дальнейшего задания, т.е в последующем просто копирую и меняю только текст-->
+      <section class="about flex">
+        <!-- блок О ресторане -->
+        <h2>
+          Food <br />
+          Exxe <br />
+          Relo
+        </h2>
+        <p>
+          Sed vel ornare ut rhoncus, ac ut nibh. Amet at sit et nibh. In lectus
+          phasellus non ornare eget velit. Facilisi urna, tristique dui,
+          rhoncus, dolor. Tincidunt enim gravida dignissim leo pulvinar sit
+          volutpat nulla vestibulum. <br />
+          <br />
+          Morbi pellentesque enim massa laoreet vel id. Lectus ac, facilisis
+          neque turpis. Morbi massa enim nullam sem vehicula. Amet quis
+          pellentesque enim porttitor lectus interdum. Nisi, faucibus pharetra
+          at porttitor. Fringilla luctus pretium in viverra. In adipiscing
+          tempor amet malesuada ullamcorper ut sagittis. Dui, scelerisque
+          vulputate risus massa dictum. Cras at quis in eu, faucibus feugiat
+          vel. At.
+        </p>
+      </section>
 
-			<div class="title-block flex"><p>Доставка</p><hr></div>
-			<section class="delivery flex"><!-- блок доставки -->
-				<h2>Служба <br> доставки</h2>
-				<p>Phasellus diam, ultrices lobortis integer et. Diam, purus vel sagittis, non, a. In risus, venenatis enim vitae mauris aliquet orci. Consectetur nibh interdum nullam ut lobortis eu etiam sem. Et in vitae pellentesque non, lectus orci natoque faucibus suspendisse. Semper aliquam id et ultrices velit donec lacus. In odio sit nibh volutpat cras placerat sit feugiat dignissim. Rutrum et suspendisse tortor, lobortis eleifend in fringilla. Egestas cursus imperdiet cursus dui, nulla id massa. Hendrerit nam enim semper porttitor imperdiet diam semper. Nulla sit etiam cras morbi enim elementum euismod sapien.
-					<button>Подробнее</button><button>Условия доставки</button><!-- кнопки для удобсва и вероятно правильности выравнивания находятся в p -->
-				</p>
-			</section>
-	</main>	
-	<footer>
-		<section>
-			<!-- <p>© 2024</p>
-			<a href="https://t.me/Lib_int">Сделал @Lib_int</a> -->
-		</section>
-	</footer>
-</body>
+      <div class="title-block flex">
+        <p>меню</p>
+        <hr />
+      </div>
+      <section class="menu flex">
+        <!-- Блок Меню -->
+        <div class="flex">
+          <h2>Меню</h2>
+          <p>
+            At faucibus nullam mauris vitae ut non. Augue libero non nibh nec,
+            et eget erat. Nascetur nunc neque, varius massa aliquam interdum
+            turpis massa. Ac tortor aliquam risus, interdum nisl mauris sit. Ut
+            placerat fermentum pellentesque ac at. Vitae venenatis faucibus urna
+            mi eget vitae quam eu. Euismod sed mauris id turpis iaculis. Erat
+            rutrum dolor, vitae morbi. <br /><br />
+            Nunc cras cras aliquet blandit faucibus massa sagittis semper.
+          </p>
+        </div>
+        <div class="flex">
+          <!-- подблоки с белым квадратом-обводкой -->
+          <div class="menu-img flex">
+            <img src="./img/fons/menu-img1.jpg" alt="⎙" />
+            <div class="null-block"></div>
+            <!-- типо блок пустой т.к у него колько рамка -->
+            <div class="title-block flex">
+              <p>Основное меню</p>
+              <hr />
+            </div>
+          </div>
+          <div class="menu-img flex">
+            <img src="./img/fons/menu-img2.jpg" alt="⎙" />
+            <div class="null-block"></div>
+            <!-- типо блок пустой т.к у него колько рамка -->
+            <div class="title-block flex">
+              <p>Барная карта</p>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="title-block flex">
+        <p>Доставка</p>
+        <hr />
+      </div>
+      <section class="delivery flex">
+        <!-- блок доставки -->
+        <h2>
+          Служба <br />
+          доставки
+        </h2>
+        <p>
+          Phasellus diam, ultrices lobortis integer et. Diam, purus vel
+          sagittis, non, a. In risus, venenatis enim vitae mauris aliquet orci.
+          Consectetur nibh interdum nullam ut lobortis eu etiam sem. Et in vitae
+          pellentesque non, lectus orci natoque faucibus suspendisse. Semper
+          aliquam id et ultrices velit donec lacus. In odio sit nibh volutpat
+          cras placerat sit feugiat dignissim. Rutrum et suspendisse tortor,
+          lobortis eleifend in fringilla. Egestas cursus imperdiet cursus dui,
+          nulla id massa. Hendrerit nam enim semper porttitor imperdiet diam
+          semper. Nulla sit etiam cras morbi enim elementum euismod sapien.
+          <button onclick="document.location='./delivery.html'">Подробнее</button><!-- Кнопки для перехода на другую страницу доставки -->
+          <button onclick="document.location='./delivery.html'">Условия доставки</button>
+          <!-- кнопки для удобсва и вероятно правильности выравнивания находятся в p -->
+        </p>
+      </section>
+      <div class="title-block flex">
+        <p>контакты</p>
+        <hr />
+      </div>
+      <section class="contacts flex">
+        <ul class="time flex">
+          <li>
+            <h2>2</h2>
+            <p>
+              из центра <br />
+              Санкт-Петербурга
+            </p>
+          </li>
+          <li>
+            <h2>12</h2>
+            <p>
+              из города <br />
+              Зеленогорск
+            </p>
+          </li>
+          <li>
+            <h2>42</h2>
+            <p>
+              из аэропорта <br />
+              Пулково
+            </p>
+          </li>
+          <li>
+            <h2>52</h2>
+            <p>
+              из города <br />
+              Павловск
+            </p>
+          </li>
+        </ul>
+        <div class="address">
+          <ul>
+            <li>
+              <img src="./img/icon/map_Mark.svg" alt="⎙"> <p>Санкт-Петербург, Северная дорога, 11 </p>
+            </li>
+            <li>
+              <img src="./img/icon/call.svg" alt="⎙"> <p>+7 (921) 777-77-77</p>
+            </li>
+            <li>
+              <p><b>Время работы</b></p>
+            </li>
+            <li>
+              <p><b>Вск-Чт</b>с 12:00 до 23:00</p>
+            </li>
+            <li>
+              <p><b>Пт-Сб</b>с 12:00 до 03:00</p>
+            </li>
+            <button>Бронь столика</button>
+            <button>Задать вопрос</button>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="flex">
+      <a href=""><img src="./img/icon/Main_logo.svg" alt="⎙"></a> 
+      <a href="">Политика конфиденциальности</a>
+      <!-- <div class="flex">
+        <img src="./img/icon/VISA.svg" alt="⎙">
+        <img src="./img/icon/MIR.svg" alt="⎙">
+        <img src="./img/icon/MCAR.png" alt="⎙">
+      </div> -->
+      <a href="https://t.me/Lib_int">Сделал @Lib_int</a> 
+    </footer>
+  </body>
 </html>
