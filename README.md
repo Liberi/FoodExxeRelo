@@ -9,4 +9,6 @@
 ![image](https://github.com/Liberi/FoodExxeRelo/assets/130091860/a3d944eb-5115-4278-b383-47aadffa2d60)
 
 ## Итоговый результат
-_Будет по выполнению работы_
+![opera_XzS6qvSoLh-min](https://github.com/Liberi/FoodExxeRelo/assets/130091860/9801b47d-5359-4fbd-87aa-ce88e6318e07)
+==
+![opera_FE5FAYNw2a-min](https://github.com/Liberi/FoodExxeRelo/assets/130091860/54e2f134-a10e-4981-aad8-f8a08777d0d2)
