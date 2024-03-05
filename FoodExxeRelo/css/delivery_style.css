@@ -1,0 +1,211 @@
+@font-face {
+  /*пождключение шрифтов 1*/
+  font-family: "CirceLight"; /*их название*/
+  src: url("../fonts/Circe/CirceLight/CirceLight.eot");
+  src: url("../fonts/Circe/CirceLight/CirceLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Circe/CirceLight/CirceLight.woff") format("woff"),
+    url("../fonts/Circe/CirceLight/CirceLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  /*пождключение шрифтов 2*/
+  font-family: "CirceRegular"; /*их название*/
+  src: url("../fonts/Circe/CirceRegular/CirceRegular.eot");
+  src: url("../fonts/Circe/CirceRegular/CirceRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Circe/CirceRegular/CirceRegular.woff") format("woff"),
+    url("../fonts/Circe/CirceRegular/CirceRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+*/* Удаляем изначальные отступы у всех элементов */ {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover /*ссылка при наведении прозрачнее и подчеркнутая*/ {
+  text-decoration: underline;
+  filter: brightness(85%);
+}
+button:hover {filter: brightness(85%);}/*делает кнопку прозрачнее при наведении*/
+ul {list-style: none;} /* Удаляем точки у всех списков */
+.flex /* Класс который облегчает написание display: flex */ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header,
+main {
+  font-family: CirceRegular;
+  color: white;
+  margin: 0 12% 0 17%;
+
+  /*!!!!!!!! УДАЛИТЬ все свойства ниже, ДЛЯ ВИЗУАЛЬНОГО РАЗДЕЛЕНИЯ и ПОНИМАНИЯ !!!!!!!!*/
+  background-color: rgba(51, 51, 51, 0.4);
+  border: 5px solid black;
+  color: chartreuse;
+  padding-left: 10%;
+  height: 300px;
+  /* до сюда */
+}
+header {
+  margin-bottom: 60px;
+  padding-top: 30px;
+  height: 150px; /* тут размер и оступы я уже подвел, но можешь помнять */
+}
+/* main{ main можно отделить если в этом будет необходимость
+
+ } */
+aside {
+  position: fixed; /* ==================== если интернсно именно здесь зафиксировн блок сбоку */
+  box-sizing: border-box;
+  padding: 20px 0;
+  background-color: rgba(51, 51, 51, 1);
+  height: 100%;
+  width: 120px;
+}
+aside ul.flex {
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%; /* inherit в этом и других свойствах это параметр, 
+                        который копирует свойства у своего родительского элемента */
+  width: 100%;
+}
+aside ul.flex li {margin: 10px 0;}
+aside ul.flex li:nth-child(2) {flex-grow: 1;}
+footer {
+  margin-left: 120px;
+  margin-top: 100px;
+  font-family: CirceRegular;
+  color: rgba(51, 51, 51, 1);
+}
+.padding-main {padding: 0 13% 0 10%;}
+.title-block {
+  justify-content: start;
+  margin-left: 11%;
+  width: 25%;
+}
+.title-block hr {
+  width: 60px;
+  border: 2px solid rgba(181, 149, 113, 1);
+  margin-left: 30px;
+}
+.title-block p {
+  text-transform: uppercase; /* все символы большие */
+  font-size: 20px;
+  font-family: CirceRegular;
+  font-weight: 600;
+}
+footer section.flex {
+  align-items: start;
+  padding: 80px 0 0 4%;
+}
+footer section h2 {
+  font-size: 64px;
+  line-height: 1.2;
+}
+/* если ты не разбираешься в селекторах мой дорогой дргуг, смотри их в инете,
+ даже конкеретно могу сказать где "https://htmlacademy.ru/blog/css/selectors" */
+.address button:first-of-type {
+  background: rgba(181, 149, 113, 1);
+  color: white;
+  border: none;
+  font-weight: 550;
+}
+.address button:last-of-type {
+  background: white;
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  color: rgba(51, 51, 51, 1);
+}
+.contacts {
+  margin: 0 13% 0 7%;
+  height: 450px;
+  justify-content: space-between;
+}
+.time {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 85%;
+  width: 35%;
+  padding-top: 4%;
+}
+.time li {
+  height: 132px;
+  width: 50%;
+}
+.time h2 {
+  display: inline-block;
+  color: rgba(181, 149, 113, 1);
+}
+.time h2::after {
+  content: "мин";
+  margin-left: 15px;
+  font-size: 32px;
+}
+.time p {
+  font-family: CirceRegular;
+  color: black;
+  font-size: 18px;
+}
+.address {
+  position: relative;
+  background: url(../img/fons/map.png) center no-repeat;
+  background-size: cover;
+  width: 56%;
+  height: 100%;
+}
+.address ul {
+  position: absolute;
+  top: 12%;
+  left: -15%;
+  padding: 40px;
+  background-color: rgba(91, 91, 91, 1);
+  width: 45%;
+  height: 60%;
+  color: white;
+}
+.address ul p {
+  display: inline-block;
+  font-size: 18px;
+}
+.address ul img + p {
+  margin: 0 0 20px 15px;
+  font-size: 16px;
+}
+.address ul li:nth-child(3) p {
+  margin: 5px 0 15px 0;
+  font-size: 20px;
+}
+.address ul li:last-of-type p {
+  margin: 15px 0 30px 0;
+}
+.address ul b {
+  margin-right: 14px;
+}
+.address button {
+  width: 44%;
+  font-family: CirceRegular;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white !important;
+}
+.address button:last-of-type {
+  margin-left: 15px;
+  background: none;
+  border-color: white;
+}
+.bott-block-footer {
+  margin-top: 100px;
+  padding: 0 13% 0 11%;
+  font-family: CirceLight;
+  height: 120px;
+  background-color: rgba(51, 51, 51, 1);
+  justify-content: space-between;
+}
+.bott-block-footer div img {margin: 0 15px;}
