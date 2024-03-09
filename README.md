@@ -8,7 +8,7 @@
 ==
 ![image](https://github.com/Liberi/FoodExxeRelo/assets/130091860/a3d944eb-5115-4278-b383-47aadffa2d60)
 ==
-![image](https://github.com/Liberi/FoodExxeRelo/assets/130091860/d17e359c-76fd-498b-a8cf-592f5138adf5)
+![image](https://github.com/Liberi/FoodExxeRelo/assets/130091860/5ae4940f-de96-4fb0-a0df-fbb08eb783be)
 
 ## Итоговый результат
 ![opera_XzS6qvSoLh-min](https://github.com/Liberi/FoodExxeRelo/assets/130091860/9801b47d-5359-4fbd-87aa-ce88e6318e07)
