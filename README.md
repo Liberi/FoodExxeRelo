@@ -13,5 +13,7 @@
 ## Итоговый результат
 ![opera_XzS6qvSoLh-min](https://github.com/Liberi/FoodExxeRelo/assets/130091860/9801b47d-5359-4fbd-87aa-ce88e6318e07)
 ==
-![opera_FE5FAYNw2a-min](https://github.com/Liberi/FoodExxeRelo/assets/130091860/54e2f134-a10e-4981-aad8-f8a08777d0d2)
+![opera_xtbTYlaEpA-min](https://github.com/Liberi/FoodExxeRelo/assets/130091860/d1348e9f-8c4a-4445-95c5-90dd71eeec80)
+==
+![opera_KYq8tTInEG-min](https://github.com/Liberi/FoodExxeRelo/assets/130091860/9b2758a8-a338-4507-9b6d-b42ffbbd8159)
 ==
