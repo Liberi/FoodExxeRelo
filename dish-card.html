@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Food ER - Заказ блюда</title>
+    <title>Food ER - Блюдо</title>
     <link rel="stylesheet" type="text/css" href="./css/other-pages_style.css" />
     <!-- Подключаем стили -->
-    <link rel="icon" href="./img/icon/Main_logo_delivery.svg" />
+    <link rel="icon" href="./img/icon/Main_logo_dishs.svg" />
     <!-- Подключаем иконку во вкладке браузера -->
   </head>
   <body>
@@ -35,8 +35,8 @@
     <header>
       <section class="header_top flex">
         <a href="">Личный кабинет</a>
-        <img src="./img/icon/account.svg" alt="" />
-        <img src="./img/icon/shopping-basket.svg" alt="" />
+        <a href=""><img src="./img/icon/account.svg" alt="" /></a> 
+        <a href=""><img src="./img/icon/shopping-basket.svg" alt="" /></a> 
       </section>
       <ul class="flex">
         <li><a href="">Завтраки</a></li>
@@ -54,100 +54,68 @@
         <li><a href="">Гарниры</a></li>
       </ul>
     </header>
-    <main>
-      <section class="product">
-        <ul class="flex">
-          <li class="">
-            <img src="./img/fons/product_(0).png" alt="">
-            <div class="flex">
-              <h2>Яичница-глазунья из трех яиц</h2>
-              <h3>250</h3>
-              <button onclick="document.location='./dish-card.html'">В корзину</button>
-            </div>
-          </li>
-          <li class="">
-            <img src="./img/fons/product_(1).png" alt="">
-            <div class="flex">
-              <h2>Омлет из трёх яиц</h2>
-              <h3>250</h3>
-              <button onclick="document.location='./dish-card.html'">В корзину</button>
-            </div>
-          </li>
-          <li class="">
-            <img src="./img/fons/product_(2).png" alt="">
-            <div class="flex">
-              <h2>Домашние сырники</h2>
-              <h3>490</h3>
-              <button onclick="document.location='./dish-card.html'">В корзину</button>
-            </div>
-          </li>
-          <li class="">
-            <img src="./img/fons/product_(3).png" alt="">
-            <div class="flex">
-              <h2>Блины</h2>
-              <h3>от 190</h3>
-              <button onclick="document.location='./dish-card.html'">В корзину</button>
-            </div>
-          </li>
-          <li class="">
-            <img src="./img/fons/product_(4).png" alt="">
-            <div class="flex">
-              <h2>Каша c ягодами и кедровыми орехами</h2>
-              <h3>450</h3>
-              <button onclick="document.location='./dish-card.html'">В корзину</button>
-            </div>
-          </li>
-          <li class="">
-            <img src="./img/fons/product_(5).png" alt="">
-            <div class="flex">
-              <h2>Скрэмбл</h2>
-              <h3>290</h3>
-              <button onclick="document.location='./dish-card.html'">В корзину</button>
-            </div>
-          </li>
-          <li class="">
-            <img src="./img/fons/product_(6).png" alt="">
-            <div class="flex">
-              <h2>Яйцо Бенедикт с лососем</h2>
-              <h3>850</h3>
-              <button onclick="document.location='./dish-card.html'">В корзину</button>
-            </div>
-          </li>
-          <li class="">
-            <img src="./img/fons/product_(7).png" alt="">
-            <div class="flex">
-              <h2>Яйцо Бенедикт с беконом</h2>
-              <h3>650</h3>
-              <button onclick="document.location='./dish-card.html'">В корзину</button>
-            </div>
-          </li>
-          <li class="">
-            <img src="./img/fons/product_(8).png" alt="">
-            <div class="flex">
-              <h2>Гречневая каша с авокадо, яйцом пашот и пармезаном</h2>
-              <h3>490</h3>
-              <button onclick="document.location='./dish-card.html'">В корзину</button>
-            </div>
-          </li>
-          <li class="">
-            <img src="./img/fons/product_(9).png" alt="">
-            <div class="flex">
-              <h2>Кобб – салат с лососем</h2>
-              <h3>890</h3>
-              <button onclick="document.location='./dish-card.html'">В корзину</button>
-            </div>
-          </li>
-          <li class="">
-            <img src="./img/fons/product_(9).png" alt="">
-            <div class="flex">
-              <h2>Кобб – салат с креветками</h2>
-              <h3>960</h3>
-              <button onclick="document.location='./dish-card.html'">В корзину</button>
-            </div>
-          </li>
-        </ul>
+    <main class="flex">
+      <section class="product-preview__main">
+        <img src="./img/fons/product_(0).png" alt="#">
+        <div class="flex">
+          <img src="./img/fons/product_(0).png" alt="#">
+          <img src="./img/fons/product_(0).png" alt="#">
+          <img src="./img/fons/product_(0).png" alt="#">
+        </div>   
+      </section>
+      <section class="product-setings__main">
+        <h2>Яичница-глазунья из трех яиц</h2>
+        <form action="">
+          <hr>
+          <h2>250 ₽</h2><!-- ::after -->
+          <label for="count-product">Количество порций:</label>
+          <br>
+          <div class="form-number__product flex">
+            <input type="number" id="count-product" step="1" min="1" max="9" placeholder="1">
+            <p>▲</p>
+            <p>▼</p>
+            <input type="submit" value="В корзину">
+          </div>
+          <hr>
+          <h2>Сделать еще вкуснее</h2>
+          <ul>
+            <li class="flex">
+              <div>
+                <p>Тигровые креветки 60 г</p>
+                <h3>450 ₽</h3>
+              </div>
+              <input type="checkbox" id="ch1">
+              <label for="ch1"></label>
+            </li>
+            <li class="flex">
+              <div>
+                <p>Томаты / паприка</p>
+                <h3>80 ₽</h3>
+              </div>
+              <input type="checkbox" id="ch2">
+              <label for="ch2"></label>
+            </li>
+            <li class="flex">
+              <div>
+                <p>Бекон</p>
+                <h3>120 ₽</h3>
+              </div>
+              <input type="checkbox" id="ch3">
+              <label for="ch3"></label>
+            </li>
+            <li class="flex">
+              <div>
+                <p>Сыр чеддер 30 г</p>
+                <h3>80 ₽</h3>
+              </div>
+              <input type="checkbox" id="ch4">
+              <label for="ch4"></label>
+            </li>
+          </ul>
+        </form>
       </section>
     </main>
+
     <footer>
       <div class="title-block flex">
         <p>контакты</p>
@@ -192,7 +160,7 @@
             </li>
             <li>
               <img src="./img/icon/call.svg" alt="⎙" />
-              <p> <a href="tel:+79217777777">+7 (921) 777-77-77</a> </p>
+              <p>+7 (921) 777-77-77</p>
             </li>
             <li>
               <p><b>Время работы</b></p>
